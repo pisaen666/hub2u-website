@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hub2U - ของสดจากตลาดวิศิษฐ์ชัย ส่งถึงหน้าบ้าน (Desktop)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&amp;family=Prompt:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#EA580C',
+              'orange-hover': '#C2410C',
+              cream: '#FFF7ED',
+              'cream-light': '#FFFAF3',
+              charcoal: '#292524',
+              muted: '#57534E',
+              border: '#FED7AA'
+            }
+          },
+          fontFamily: {
+            heading: ['Kanit', 'sans-serif'],
+            body: ['Prompt', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background-color: #FFF7ED;
+      color: #292524;
+      line-height: 1.6;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Kanit', sans-serif;
+    }
+    .group:hover .group-hover-block {
+      display: block;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="bg-brand-cream text-brand-charcoal min-h-screen">
+<!-- DESKTOP HEADER -->
+<header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-orange-100 shadow-sm transition-all">
+<div class="max-w-7xl mx-auto px-8 h-24 flex items-center justify-between">
+<!-- Brand Logo Area -->
+<div class="flex items-center gap-4">
+<!-- Empty circular logo placeholder labeled "Logo" -->
+<div class="w-14 h-14 rounded-full border-2 border-dashed border-brand-orange bg-orange-50 flex items-center justify-center text-sm font-heading font-semibold text-brand-orange shrink-0 shadow-inner">
+          Logo
+        </div>
+<div>
+<span class="text-3xl font-bold tracking-tight text-brand-charcoal font-heading leading-tight block">Hub2U</span>
+<span class="text-sm text-brand-muted font-normal">ตลาดวิศิษฐ์ชัย บ้านบึง ชลบุรี</span>
+</div>
+</div>
+<!-- Navigation Menu -->
+<nav class="flex items-center gap-8 font-heading text-lg font-medium text-brand-charcoal">
+<a class="text-brand-orange font-semibold hover:text-brand-orange transition-colors" href="#home">หน้าแรก</a>
+<a class="hover:text-brand-orange transition-colors" href="#how">วิธีสั่งซื้อ</a>
+<a class="hover:text-brand-orange transition-colors" href="#delivery">พื้นที่จัดส่ง</a>
+<!-- Dropdown: ร่วมงานกับเรา -->
+<div class="relative group py-2">
+<button class="flex items-center gap-1.5 hover:text-brand-orange transition-colors focus:outline-none" type="button">
+<span>ร่วมงานกับเรา</span>
+<svg class="w-4 h-4 text-stone-500 group-hover:text-brand-orange transition-transform duration-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</button>
+<!-- Dropdown menu items: สมัครร้านค้า, สมัครไรเดอร์ -->
+<div class="hidden group-hover-block absolute top-full left-0 w-52 bg-white rounded-xl shadow-lg border border-orange-100 py-2.5 z-50 animate-in fade-in">
+<a class="block px-4 py-2.5 text-base hover:bg-orange-50 hover:text-brand-orange transition-colors" href="#merchant">
+              สมัครร้านค้า
+            </a>
+<a class="block px-4 py-2.5 text-base hover:bg-orange-50 hover:text-brand-orange transition-colors" href="#rider">
+              สมัครไรเดอร์
+            </a>
+</div>
+</div>
+<a class="hover:text-brand-orange transition-colors" href="#about">เกี่ยวกับเรา</a>
+<a class="hover:text-brand-orange transition-colors" href="#contact">ติดต่อเรา</a>
+</nav>
+<!-- Header Filled Orange Button: "สั่งของสด" -->
+<div>
+<a class="min-h-[52px] px-7 py-3 rounded-xl bg-brand-orange hover:bg-brand-orange-hover text-white text-lg font-heading font-semibold flex items-center justify-center gap-2 shadow-sm transition-all hover:shadow hover:-translate-y-0.5 active:translate-y-0" href="#order">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>
+          สั่งของสด
+        </a>
+</div>
+</div>
+</header>
+<main><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-bright py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-desktop flex flex-col items-center text-center relative z-10">
+<!-- Tag Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high text-primary font-headline-sm text-sm tracking-wide shadow-sm mb-4">
+<span class="material-symbols-outlined text-lg">menu_book</span>
+<span>คู่มือการสั่งซื้อ</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-lg text-display text-on-surface font-bold tracking-tight max-w-3xl mb-4 leading-tight">
+        วิธีสั่งซื้อของสดผ่าน <span class="text-primary-container">Hub2U</span>
+</h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mb-8 leading-relaxed">
+        สั่งง่าย ครบจบใน 4 ขั้นตอน ไม่ต้องโหลดแอป คัดสดใหม่จากตลาดวิศิษฐ์ชัย ส่งตรงถึงหน้าบ้านคุณในบ้านบึง
+      </p>
+<!-- Primary CTA -->
+<div class="flex items-center justify-center gap-4">
+<a class="min-h-[56px] px-8 py-3.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-3 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all" href="#order">
+<span class="material-symbols-outlined text-2xl">shopping_basket</span>
+<span>สั่งของสด</span>
+</a>
+</div>
+<!-- Hero Visual Accent Image / Card -->
+<div class="w-full mt-12 rounded-3xl overflow-hidden shadow-xl relative bg-surface-container-low max-h-[460px]">
+<img class="w-full h-[460px] object-cover object-center" data-alt="Rustic Thai wooden porch veranda surrounded by lush green potted tropical plants and monstera leaves, filled with natural morning golden sunlight. On the weathered timber floorboards sit two eco-friendly shopping bags packed overflowing with freshly picked morning-glory greens, vibrant red tomatoes, crisp cucumbers, and local market herbs delivered straight to the home doorstep in a warm, welcoming community setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTA_BpHQ7ilKdahlbQJQp9V9sAUSVopOsqYRmn6taAPzQH9Gfl-w734iFBzcszUmAjmwLv8BgliJ3AyMX77mC80qZ-uDdkbrhn491fFowB3smOIiZ1FORwcqqXZ8h-429yuS_4qduu57WUKfieI9YRf4PH5tZ94zzKEnzXbuwNlzGYG91ecv6kTJcdCUFOr146bZT3lW0u5fusojCpYK1IPbwaISGR0XrgwZlZnb2fuvz6JTNCgQLH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent flex items-end p-8 md:p-12">
+<div class="text-left text-on-primary">
+<span class="font-headline-sm text-label-md uppercase tracking-wider text-inverse-primary block mb-1">สดจริงจากแผงตลาดวิศิษฐ์ชัย</span>
+<p class="font-headline-md text-headline-md text-on-primary font-semibold">ส่งตรงถึงบันไดบ้านคุณในชลบุรี รวมของจากตลาดในถุงเดียว ค่าส่งรอบเดียว</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 DETAILED ORDERING STEPS SECTION -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-headline-sm text-label-md text-primary font-semibold uppercase tracking-wider">ขั้นตอนการสั่งซื้อ</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-4">4 ขั้นตอนง่ายๆ สะดวก รวดเร็ว ไร้กังวล</h2>
+<p class="font-body-md text-body-md text-secondary">บริการคัดสรรของสดจากพ่อค้าแม่ค้าที่คุณคุ้นเคย ด้วยความใส่ใจทุกรายละเอียด</p>
+</div>
+<!-- 4 Columns Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl">touch_app</span>
+</div>
+<span class="font-headline-lg text-display text-surface-container-highest font-bold group-hover:text-outline-variant transition-colors">01</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">เลือกของสดในแอป</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              เข้าเว็บแอป Hub2U เลือกซื้อผักสด ผลไม้ เนื้อหมู ไก่ อาหารทะเล หรือของแห้งจากแผงในตลาดวิศิษฐ์ชัยได้ตามใจ พร้อมระบุความต้องการพิเศษถึงทีมงาน
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-xl px-4 py-2.5">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">check_circle</span>
+              รวมสินค้าจากหลายร้านในออเดอร์เดียว
+            </span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl">grocery</span>
+</div>
+<span class="font-headline-lg text-display text-surface-container-highest font-bold group-hover:text-outline-variant transition-colors">02</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">ทีมงานตลาดคัดของสดให้</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              ทีมงานประจำตลาดวิศิษฐ์ชัยเดินเลือกของสดใหม่ มีคุณภาพ ชั่งน้ำหนัก และรวบรวมสินค้าจากแผงรวมใส่ถุงเดียวกันอย่างประณีตเรียบร้อย
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-xl px-4 py-2.5">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">check_circle</span>
+              คัดเลือกด้วยสายตาเหมือนไปเดินเอง
+            </span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl">two_wheeler</span>
+</div>
+<span class="font-headline-lg text-display text-surface-container-highest font-bold group-hover:text-outline-variant transition-colors">03</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">ไรเดอร์ส่งตรงถึงจุดปักหมุด</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              ไรเดอร์คนบ้านบึงที่ชำนาญเส้นทาง นำถุงของสดส่งตรงถึงหน้าประตูบ้านหรือพิกัดที่คุณปักหมุดไว้อย่างรวดเร็วและระมัดระวัง
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-xl px-4 py-2.5">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">check_circle</span>
+              ชำนาญตรอกซอกซอยในบ้านบึง
+            </span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<span class="font-headline-lg text-display text-surface-container-highest font-bold group-hover:text-outline-variant transition-colors">04</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">รับของที่บ้าน</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              ไรเดอร์นำของสดมาส่งถึงจุดที่คุณปักหมุดไว้ จ่ายผ่านพร้อมเพย์ตอนสั่งแล้ว รอรับของที่หน้าบ้านได้เลย
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-xl px-4 py-2.5">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">check_circle</span>
+              จ่ายล่วงหน้าผ่านพร้อมเพย์ตอนสั่ง
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW TO ADD WEB APP TO HOME SCREEN SECTION -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-headline-sm text-sm tracking-wide shadow-sm mb-3">
+<span class="material-symbols-outlined text-lg">install_mobile</span>
+<span>ไม่ต้องดาวน์โหลดจากสโตร์</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">วิธีบันทึก Hub2U ไว้บนหน้าจอมือถือ</h2>
+<p class="font-body-lg text-body-lg text-secondary">
+          ใช้งานง่ายเหมือนแอปทั่วไป ไม่ต้องดาวน์โหลดจากสโตร์ ไม่เปลืองพื้นที่เครื่อง เปิดกดสั่งได้ในคลิกเดียว
+        </p>
+</div>
+<!-- Side-by-side comparison cards for iOS & Android -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- iOS Safari Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-6 pb-6 bg-surface-container-low p-4 rounded-2xl">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface font-headline-sm text-2xl font-bold">
+                🍎
+              </div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">สำหรับ iPhone (Safari)</h3>
+<span class="font-label-md text-label-md text-secondary">ระบบปฏิบัติการ iOS</span>
+</div>
+</div>
+<ol class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-headline-sm flex items-center justify-center shrink-0 text-base font-semibold">
+                  1
+                </div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">เปิด Safari ไปที่ hub2u</p>
+<p class="font-body-md text-body-md text-secondary mt-1">ใช้เบราว์เซอร์ Safari บน iPhone แล้วเข้าหน้าเว็บหลักของ Hub2U</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-headline-sm flex items-center justify-center shrink-0 text-base font-semibold">
+                  2
+                </div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span>แตะที่ปุ่ม 'แชร์'</span>
+<span class="material-symbols-outlined text-primary text-xl">ios_share</span>
+</p>
+<p class="font-body-md text-body-md text-secondary mt-1">มองหาไอคอนสี่เหลี่ยมที่มีลูกศรชี้ขึ้น ที่แถบเมนูด้านล่างของจอ</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-headline-sm flex items-center justify-center shrink-0 text-base font-semibold">
+                  3
+                </div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span>เลือก 'เพิ่มไปยังหน้าจอโฮม'</span>
+<span class="material-symbols-outlined text-primary text-xl">add_box</span>
+</p>
+<p class="font-body-md text-body-md text-secondary mt-1">เลื่อนลงมาเล็กน้อยแล้วเลือก "Add to Home Screen" จากนั้นกด "เพิ่ม" ที่มุมขวาบน</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="mt-8 pt-4 bg-surface-container rounded-2xl p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-2xl">verified</span>
+<p class="font-label-md text-label-md text-on-surface">ไอคอน Hub2U จะปรากฏบนหน้าจอโฮม แตะเปิดสั่งของสดได้ทันที</p>
+</div>
+</div>
+<!-- Android Chrome Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-6 pb-6 bg-surface-container-low p-4 rounded-2xl">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface font-headline-sm text-2xl font-bold">
+                🤖
+              </div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">สำหรับ Android (Chrome)</h3>
+<span class="font-label-md text-label-md text-secondary">ระบบปฏิบัติการ Android</span>
+</div>
+</div>
+<ol class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-headline-sm flex items-center justify-center shrink-0 text-base font-semibold">
+                  1
+                </div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">เปิด Google Chrome ไปที่ hub2u</p>
+<p class="font-body-md text-body-md text-secondary mt-1">เปิดเบราว์เซอร์ Chrome แล้วเข้าสู่หน้าเว็บไซต์ Hub2U</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-headline-sm flex items-center justify-center shrink-0 text-base font-semibold">
+                  2
+                </div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span>แตะที่ปุ่มจุดสามจุด</span>
+<span class="material-symbols-outlined text-primary text-xl">more_vert</span>
+</p>
+<p class="font-body-md text-body-md text-secondary mt-1">แตะสัญลักษณ์จุดสามจุดแนวตั้ง (⋮) บริเวณมุมขวาบนของหน้าต่างเบราว์เซอร์</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-headline-sm flex items-center justify-center shrink-0 text-base font-semibold">
+                  3
+                </div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span>เลือก 'เพิ่มลงในหน้าจอหลัก' หรือ 'ติดตั้งแอป'</span>
+<span class="material-symbols-outlined text-primary text-xl">get_app</span>
+</p>
+<p class="font-body-md text-body-md text-secondary mt-1">แตะเมนู "Install App" หรือ "Add to Home screen" แล้วกดยืนยัน</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="mt-8 pt-4 bg-surface-container rounded-2xl p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-2xl">verified</span>
+<p class="font-label-md text-label-md text-on-surface">แอปจะถูกติดตั้งไว้บนมือถือ เปิดใช้งานรวดเร็ว ไม่เปลืองความจำ</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ SECTION (INTERACTIVE ACCORDIONS) -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-headline-sm text-label-md text-primary font-semibold uppercase tracking-wider">ข้อสงสัยที่พบบ่อย</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-4">คำถามที่พบบ่อย (FAQ)</h2>
+<p class="font-body-md text-body-md text-secondary">รวบรวมคำตอบข้อสงสัยเกี่ยวกับการสั่งของสดและบริการส่งของ Hub2U</p>
+</div>
+<!-- Accordion Container -->
+<div class="space-y-4" id="faq-accordion-group">
+<!-- Question 1 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-sm text-on-surface font-semibold flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container font-headline-sm text-sm shrink-0">?</span>
+<span>สั่งของจากหลายแผงในตลาดพร้อมกัน คิดค่าจัดส่งอย่างไร?</span>
+</span>
+<span class="material-symbols-outlined faq-icon text-secondary text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content px-6 pb-6 pt-1 hidden">
+<p class="font-body-md text-body-md text-secondary leading-relaxed bg-surface-container-low p-4 rounded-xl">
+              คิดค่าส่งรอบเดียวในถุงเดียวครับ! คุณสามารถเลือกของสดจากหลายร้านในออเดอร์เดียวได้ ทีมงานของเราจะรวบรวมจัดใส่ถุงเดียวให้ และคิดค่าจัดส่งเพียงรอบเดียวต่อการสั่งซื้อ ไม่มีการบวกค่าส่งซ้ำซ้อน
+            </p>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-sm text-on-surface font-semibold flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container font-headline-sm text-sm shrink-0">?</span>
+<span>หากสินค้าบางรายการที่ตลาดหมด มีขั้นตอนดูแลอย่างไร?</span>
+</span>
+<span class="material-symbols-outlined faq-icon text-secondary text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content px-6 pb-6 pt-1 hidden">
+<p class="font-body-md text-body-md text-secondary leading-relaxed bg-surface-container-low p-4 rounded-xl">
+              ก่อนออกจัดส่ง ทีมงานคัดของจะโทรติดต่อสอบถามลูกค้าโดยตรง เพื่อแนะนำสินค้าทดแทนที่สดใหม่ใกล้เคียงกัน หรือปรับยอดตามความต้องการของคุณ ลูกค้าจึงมั่นใจได้เต็มที่
+            </p>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-sm text-on-surface font-semibold flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container font-headline-sm text-sm shrink-0">?</span>
+<span>พื้นที่จัดส่งครอบคลุมบริเวณใดในบ้านบึงบ้าง?</span>
+</span>
+<span class="material-symbols-outlined faq-icon text-secondary text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content px-6 pb-6 pt-1 hidden">
+<p class="font-body-md text-body-md text-secondary leading-relaxed bg-surface-container-low p-4 rounded-xl">
+              ส่งในรัศมีไม่เกิน 7 กิโลเมตรจากตลาดวิศิษฐ์ชัย (วัดเป็นเส้นตรง)
+            </p>
+</div>
+</div>
+<!-- Question 4 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-sm text-on-surface font-semibold flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container font-headline-sm text-sm shrink-0">?</span>
+<span>ชำระเงินอย่างไร รองรับช่องทางใดบ้าง?</span>
+</span>
+<span class="material-symbols-outlined faq-icon text-secondary text-2xl transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content px-6 pb-6 pt-1 hidden">
+<p class="font-body-md text-body-md text-secondary leading-relaxed bg-surface-container-low p-4 rounded-xl">
+              ชำระเงินล่วงหน้าผ่านพร้อมเพย์ตอนยืนยันออเดอร์ โดยสแกน Thai QR พร้อมเพย์ผ่านแอปธนาคาร
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CALL-TO-ACTION CARD -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="bg-surface-container rounded-3xl p-10 md:p-14 shadow-md flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+<!-- Text content -->
+<div class="max-w-2xl text-left z-10">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container-lowest text-primary font-headline-sm text-sm mb-4">
+<span class="material-symbols-outlined text-base">eco</span>
+<span>ตลาดวิศิษฐ์ชัย บ้านบึง ชลบุรี</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mb-3 leading-snug">
+            ของสดตลาดวิศิษฐ์ชัย พร้อมส่งตรงถึงครัวคุณ สั่งง่าย คัดสด ส่งไว
+          </h2>
+<p class="font-body-lg text-body-lg text-secondary">
+            ให้มื้ออร่อยที่บ้านเต็มไปด้วยของสดใหม่โดยไม่ต้องฝ่าแดดหรือหาที่จอดรถ ทีมงานพร้อมบริการด้วยรอยยิ้ม
+          </p>
+</div>
+<!-- Big CTA Button -->
+<div class="shrink-0 z-10">
+<a class="min-h-[56px] px-9 py-4 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-3 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all" href="#order">
+<span class="material-symbols-outlined text-2xl">shopping_cart_checkout</span>
+<span>สั่งของสด</span>
+</a>
+</div>
+<!-- Subtle warm decorative background accent -->
+<div class="absolute -right-12 -bottom-12 w-80 h-80 rounded-full bg-primary-fixed opacity-30 pointer-events-none"></div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleFaq(btn) {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+    
+    // Close other FAQ items
+    document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.faq-icon').forEach(ic => ic.style.transform = 'rotate(0deg)');
+    
+    // Toggle current
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Pre-expand first item for welcoming affordance
+  document.addEventListener('DOMContentLoaded', () => {
+    const firstBtn = document.querySelector('.faq-btn');
+    if (firstBtn) {
+      toggleFaq(firstBtn);
+    }
+  });
+</script></main>
+<!-- DESKTOP FOOTER -->
+<footer class="bg-stone-900 text-stone-200 pt-16 pb-12 border-t border-stone-800">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+<!-- Col 1: About text -->
+<div class="md:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border border-dashed border-orange-400 bg-stone-800 flex items-center justify-center text-xs text-orange-400 font-heading">
+              Logo
+            </div>
+<span class="text-2xl font-bold font-heading text-white">Hub2U</span>
+</div>
+<p class="text-base text-stone-300 leading-relaxed max-w-sm">
+            บริการสั่งของสดจากตลาดวิศิษฐ์ชัย บ้านบึง ชลบุรี รวมของจากตลาดส่งถึงหน้าบ้านในถุงเดียว ค่าส่งรอบเดียว
+          </p>
+</div>
+<!-- Col 2: Navigation Links -->
+<div class="md:col-span-4">
+<p class="text-sm uppercase tracking-wider text-orange-400 font-semibold mb-4 font-heading">เมนูหลัก</p>
+<div class="grid grid-cols-2 gap-y-2.5 gap-x-4 text-base text-stone-300">
+<a class="hover:text-white transition-colors" href="#home">หน้าแรก</a>
+<a class="hover:text-white transition-colors" href="#how">วิธีสั่งซื้อ</a>
+<a class="hover:text-white transition-colors" href="#delivery">พื้นที่จัดส่ง</a>
+<a class="hover:text-white transition-colors" href="#merchant">สมัครร้านค้า</a>
+<a class="hover:text-white transition-colors" href="#rider">สมัครไรเดอร์</a>
+<a class="hover:text-white transition-colors" href="#about">เกี่ยวกับเรา</a>
+<a class="hover:text-white transition-colors" href="#contact">ติดต่อเรา</a>
+</div>
+</div>
+<!-- Col 3: Contact Placeholders -->
+<div class="md:col-span-3 space-y-2.5 text-base text-stone-300">
+<p class="text-sm uppercase tracking-wider text-orange-400 font-semibold mb-4 font-heading">ข้อมูลติดต่อ</p>
+<p><span class="text-stone-400">เบอร์โทรศัพท์:</span> [ใส่เบอร์โทร]</p>
+<p><span class="text-stone-400">เวลาทำการ:</span> [ใส่เวลาทำการ]</p>
+<p><span class="text-stone-400">ที่ตั้ง:</span> ตลาดวิศิษฐ์ชัย อ.บ้านบึง จ.ชลบุรี</p>
+</div>
+</div>
+<!-- Footer Bottom with PWA Note -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone-400">
+<p>© 2025 Hub2U. ตลาดวิศิษฐ์ชัย บ้านบึง ชลบุรี</p>
+<!-- PWA Note -->
+<div class="bg-stone-800 px-5 py-2.5 rounded-full border border-stone-700 text-sm text-orange-300">
+          เปิดผ่านมือถือได้เลย ไม่ต้องโหลดจากสโตร์ กดเพิ่มลงหน้าจอหลักได้
+        </div>
+</div>
+</div>
+</footer>
+</body></html>

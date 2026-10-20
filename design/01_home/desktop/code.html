@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub2U - ของสดจากตลาดวิศิษฐ์ชัย ส่งถึงหน้าบ้าน (Desktop)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#EA580C',
+              'orange-hover': '#C2410C',
+              cream: '#FFF7ED',
+              'cream-light': '#FFFAF3',
+              charcoal: '#292524',
+              muted: '#57534E',
+              border: '#FED7AA'
+            }
+          },
+          fontFamily: {
+            heading: ['Kanit', 'sans-serif'],
+            body: ['Prompt', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background-color: #FFF7ED;
+      color: #292524;
+      line-height: 1.6;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Kanit', sans-serif;
+    }
+    .group:hover .group-hover-block {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-charcoal min-h-screen">
+
+  <!-- DESKTOP HEADER -->
+  <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-orange-100 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-8 h-24 flex items-center justify-between">
+      
+      <!-- Brand Logo Area -->
+      <div class="flex items-center gap-4">
+        <!-- Empty circular logo placeholder labeled "Logo" -->
+        <div class="w-14 h-14 rounded-full border-2 border-dashed border-brand-orange bg-orange-50 flex items-center justify-center text-sm font-heading font-semibold text-brand-orange shrink-0 shadow-inner">
+          Logo
+        </div>
+        <div>
+          <span class="text-3xl font-bold tracking-tight text-brand-charcoal font-heading leading-tight block">Hub2U</span>
+          <span class="text-sm text-brand-muted font-normal">ตลาดวิศิษฐ์ชัย บ้านบึง ชลบุรี</span>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="flex items-center gap-8 font-heading text-lg font-medium text-brand-charcoal">
+        <a href="#home" class="text-brand-orange font-semibold hover:text-brand-orange transition-colors">หน้าแรก</a>
+        <a href="#how" class="hover:text-brand-orange transition-colors">วิธีสั่งซื้อ</a>
+        <a href="#delivery" class="hover:text-brand-orange transition-colors">พื้นที่จัดส่ง</a>
+
+        <!-- Dropdown: ร่วมงานกับเรา -->
+        <div class="relative group py-2">
+          <button type="button" class="flex items-center gap-1.5 hover:text-brand-orange transition-colors focus:outline-none">
+            <span>ร่วมงานกับเรา</span>
+            <svg class="w-4 h-4 text-stone-500 group-hover:text-brand-orange transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu items: สมัครร้านค้า, สมัครไรเดอร์ -->
+          <div class="hidden group-hover-block absolute top-full left-0 w-52 bg-white rounded-xl shadow-lg border border-orange-100 py-2.5 z-50 animate-in fade-in">
+            <a href="#merchant" class="block px-4 py-2.5 text-base hover:bg-orange-50 hover:text-brand-orange transition-colors">
+              สมัครร้านค้า
+            </a>
+            <a href="#rider" class="block px-4 py-2.5 text-base hover:bg-orange-50 hover:text-brand-orange transition-colors">
+              สมัครไรเดอร์
+            </a>
+          </div>
+        </div>
+
+        <a href="#about" class="hover:text-brand-orange transition-colors">เกี่ยวกับเรา</a>
+        <a href="#contact" class="hover:text-brand-orange transition-colors">ติดต่อเรา</a>
+      </nav>
+
+      <!-- Header Filled Orange Button: "สั่งของสด" -->
+      <div>
+        <a href="#order" class="min-h-[52px] px-7 py-3 rounded-xl bg-brand-orange hover:bg-brand-orange-hover text-white text-lg font-heading font-semibold flex items-center justify-center gap-2 shadow-sm transition-all hover:shadow hover:-translate-y-0.5 active:translate-y-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          สั่งของสด
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section class="max-w-7xl mx-auto px-8 pt-12 pb-16">
+      <div class="bg-white rounded-3xl p-10 lg:p-14 border border-orange-100 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-orange-50 border border-orange-200 text-brand-orange font-medium text-base">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+            บริการส่งของสด ประจำตลาดวิศิษฐ์ชัย อำเภอบ้านบึง จังหวัดชลบุรี
+          </div>
+
+          <h1 class="text-4xl lg:text-5xl font-bold text-brand-charcoal leading-[1.25]">
+            ของสดจากตลาดวิศิษฐ์ชัย <br>
+            <span class="text-brand-orange">ส่งถึงหน้าบ้าน</span>
+          </h1>
+
+          <p class="text-2xl text-brand-muted font-normal leading-relaxed">
+            สั่งหลายร้าน ถุงเดียว ค่าส่งรอบเดียว
+          </p>
+
+          <div class="pt-4 flex flex-wrap items-center gap-5">
+            <a href="#order" class="min-h-[54px] px-8 py-3.5 rounded-xl bg-brand-orange hover:bg-brand-orange-hover text-white text-xl font-heading font-semibold flex items-center justify-center gap-3 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+              สั่งของสด
+            </a>
+            <a href="#line" class="min-h-[54px] px-8 py-3.5 rounded-xl bg-white border-2 border-brand-charcoal text-brand-charcoal hover:bg-stone-50 text-xl font-heading font-semibold flex items-center justify-center gap-3 transition-all">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              แอดไลน์
+            </a>
+          </div>
+
+          <div class="pt-2 text-base text-brand-muted flex items-center gap-6">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brand-orange" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span>คัดของสดใหม่</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brand-orange" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span>ส่งรวดเร็วถึงหน้าประตู</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Warm Daylight Photo -->
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden border-2 border-orange-100 shadow-md bg-orange-50">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEchSDAsT-V1P9mEEO_RuVkNjbDygeXn1L98HeFOt58aFc83mxJ9pce5tRmZ-vVTVGCdpCfpANQDDauPms2o9hpAQFOJlnHyR8P21u12OoXE5aEUOzWo-lEYcKHRPqTozT_cJzqP_5NpIvA7whGkbXlddchN5tfNEubu1DFkQH02YVekibeSw6n6m4X9D3xEPj-WdLrIfUNbe72Z_y6P5fmSHOJs4jZXD3ZBTFlYfMJtmeNSd8gl6Q" alt="ถุงของสด ผัก ผลไม้ พร้อมส่งถึงหน้าประตูบ้าน" class="w-full h-[420px] object-cover object-center transform hover:scale-102 transition-transform duration-500">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: THREE BENEFIT CARDS -->
+    <section class="max-w-7xl mx-auto px-8 py-10">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold text-brand-charcoal mb-3">ทำไมคนในบ้านบึงถึงเลือกใช้ Hub2U</h2>
+        <p class="text-xl text-brand-muted">ช้อปปิ้งของสดตลาดวิศิษฐ์ชัยง่ายขึ้น และจ่ายค่าส่งรอบเดียว</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Benefit 1 -->
+        <div class="bg-white p-8 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 rounded-2xl bg-orange-100 text-brand-orange flex items-center justify-center mb-6">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-brand-charcoal mb-3">สั่งหลายร้าน ถุงเดียว</h3>
+          <p class="text-lg text-brand-muted leading-relaxed">
+            เลือกผักสด หมู ไก่ อาหารทะเล หรือผลไม้จากแผงในตลาดได้ตามใจ ทีมงานในตลาดจะเดินเลือกและรวมใส่ถุงเดียวกันให้อย่างเป็นระเบียบ
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="bg-white p-8 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 rounded-2xl bg-orange-100 text-brand-orange flex items-center justify-center mb-6">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-brand-charcoal mb-3">ค่าส่งรอบเดียว</h3>
+          <p class="text-lg text-brand-muted leading-relaxed">
+            รวมรายการสินค้าจากแผงในตลาดไว้ในออเดอร์เดียว คิดค่าบริการจัดส่งเพียงรอบเดียวต่อการสั่งซื้อ ประหยัดเวลา ไม่ต้องจ่ายค่าส่งซ้ำซ้อน
+          </p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="bg-white p-8 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 rounded-2xl bg-orange-100 text-brand-orange flex items-center justify-center mb-6">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-brand-charcoal mb-3">ปักหมุดบ้านและติดตามสถานะได้</h3>
+          <p class="text-lg text-brand-muted leading-relaxed">
+            ระบุตำแหน่งหน้าบ้านของคุณได้ง่ายๆ และสามารถดูสถานะการจัดของพร้อมตำแหน่งการเดินทางของไรเดอร์ได้แบบเรียลไทม์ ชัดเจน ปลอดภัย
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: HOW IT WORKS (4 STEPS CONNECTED BY A LINE) -->
+    <section id="how" class="max-w-7xl mx-auto px-8 py-14">
+      <div class="bg-white rounded-3xl p-10 lg:p-14 border border-orange-100 shadow-sm">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <h2 class="text-3xl font-bold text-brand-charcoal mb-3">วิธีสั่งซื้อ ง่ายๆ แค่ 4 ขั้นตอน</h2>
+          <p class="text-xl text-brand-muted">ระบบออกแบบมาให้ใช้งานง่าย ผู้สูงอายุก็สั่งได้ด้วยตัวเองอย่างมั่นใจ</p>
+        </div>
+
+        <!-- 4 Steps Connected by a Line -->
+        <div class="relative">
+          <!-- Connecting horizontal line across desktop steps -->
+          <div class="hidden lg:block absolute top-9 left-16 right-16 h-1 bg-orange-200 z-0"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-18 h-18 w-[72px] h-[72px] rounded-full bg-brand-orange text-white flex items-center justify-center font-heading font-bold text-2xl shadow-md mb-6 border-4 border-white">
+                1
+              </div>
+              <h3 class="text-xl font-bold text-brand-charcoal mb-2">เลือกของในแอป</h3>
+              <p class="text-base text-brand-muted leading-relaxed">
+                เลือกของสด ผัก ผลไม้ เนื้อสัตว์ และของใช้จากตลาดวิศิษฐ์ชัยตามที่ต้องการ
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-18 h-18 w-[72px] h-[72px] rounded-full bg-brand-orange text-white flex items-center justify-center font-heading font-bold text-2xl shadow-md mb-6 border-4 border-white">
+                2
+              </div>
+              <h3 class="text-xl font-bold text-brand-charcoal mb-2">ทีมในตลาดจัดของให้</h3>
+              <p class="text-base text-brand-muted leading-relaxed">
+                ทีมงานประจำตลาดคัดเลือกของสดใหม่จากแผง ตรวจสอบความสะอาด และรวมใส่ถุงเดียวกัน
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-18 h-18 w-[72px] h-[72px] rounded-full bg-brand-orange text-white flex items-center justify-center font-heading font-bold text-2xl shadow-md mb-6 border-4 border-white">
+                3
+              </div>
+              <h3 class="text-xl font-bold text-brand-charcoal mb-2">ไรเดอร์ส่งถึงจุดที่ปักหมุด</h3>
+              <p class="text-base text-brand-muted leading-relaxed">
+                ไรเดอร์คนบ้านบึงที่คุ้นเคยเส้นทาง นำของสดส่งตรงถึงหน้าประตูบ้านอย่างรวดเร็ว
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-18 h-18 w-[72px] h-[72px] rounded-full bg-brand-orange text-white flex items-center justify-center font-heading font-bold text-2xl shadow-md mb-6 border-4 border-white">
+                4
+              </div>
+              <h3 class="text-xl font-bold text-brand-charcoal mb-2">รับของที่บ้าน</h3>
+              <p class="text-base text-brand-muted leading-relaxed">
+                จ่ายผ่านพร้อมเพย์ตอนสั่ง แล้วรอรับของสดที่หน้าบ้านได้เลย
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DELIVERY AREA TEASER -->
+    <section id="delivery" class="max-w-7xl mx-auto px-8 py-10">
+      <div class="bg-white rounded-3xl p-10 lg:p-14 border border-orange-100 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-brand-orange font-medium text-sm">
+            พื้นที่ให้บริการ
+          </div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-charcoal">พื้นที่จัดส่ง</h2>
+          <p class="text-xl text-brand-muted leading-relaxed">
+            ส่งของสดถึงหน้าบ้านในรัศมีไม่เกิน 7 กม. จากตลาดวิศิษฐ์ชัย
+          </p>
+
+          <div class="p-5 rounded-2xl bg-orange-50/70 border border-orange-200 flex items-start gap-4">
+            <svg class="w-7 h-7 text-brand-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <div>
+              <p class="text-xl font-bold text-brand-charcoal mb-1">
+                ส่งในรัศมีไม่เกิน 7 กม. จากตลาด (วัดเป็นเส้นตรง)
+              </p>
+              <p class="text-base text-brand-muted">
+                ระยะวัดเป็นเส้นตรง อาจต่างจากระยะตามถนนจริงเล็กน้อย
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <a href="#delivery-area" class="inline-flex min-h-[52px] px-8 py-3.5 rounded-xl border-2 border-brand-charcoal text-brand-charcoal hover:bg-stone-50 font-heading font-semibold text-xl items-center justify-center transition-all">
+              ดูพื้นที่จัดส่ง
+            </a>
+          </div>
+        </div>
+
+        <!-- Clean Map-Style Graphic Representation -->
+        <div class="lg:col-span-6">
+          <div class="relative w-full h-80 bg-orange-50/60 rounded-2xl border-2 border-orange-200 overflow-hidden flex items-center justify-center shadow-inner">
+            <!-- Subtle Radial Grid Pattern (No street names) -->
+            <div class="absolute inset-0 opacity-25 bg-[radial-gradient(#ea580c_1.5px,transparent_1.5px)] [background-size:24px_24px]"></div>
+            
+            <!-- Outer 7km Circle -->
+            <div class="relative w-64 h-64 rounded-full border-2 border-dashed border-brand-orange bg-orange-100/40 flex items-center justify-center">
+              
+              <!-- Middle Radius Ring -->
+              <div class="w-44 h-44 rounded-full border border-orange-300/80 bg-orange-200/30 flex items-center justify-center">
+                
+                <!-- Center Market Pin Marker -->
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-brand-orange text-white flex items-center justify-center shadow-lg">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                  </div>
+                  <span class="text-sm font-heading font-bold text-brand-charcoal bg-white/95 px-3 py-1 rounded-md shadow-sm border border-orange-100 mt-2">
+                    ตลาดวิศิษฐ์ชัย
+                  </span>
+                </div>
+
+              </div>
+
+              <!-- Distance Badge -->
+              <div class="absolute top-3 right-6 bg-white/95 border border-orange-200 px-3 py-1 rounded-full text-xs font-semibold text-brand-orange shadow-xs">
+                รัศมี 7 กม. (เส้นตรง)
+              </div>
+            </div>
+
+            <div class="absolute bottom-4 left-6 text-xs text-brand-muted bg-white/80 backdrop-blur px-3 py-1.5 rounded-lg border border-orange-100">
+              จุดศูนย์กลาง: ตลาดสดวิศิษฐ์ชัย อ.บ้านบึง
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: "ร่วมเป็นส่วนหนึ่งกับ Hub2U" -->
+    <section id="partner" class="max-w-7xl mx-auto px-8 py-14">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-3">ร่วมเป็นส่วนหนึ่งกับ Hub2U</h2>
+        <p class="text-xl text-brand-muted">สร้างรายได้และเติบโตไปด้วยกันในชุมชนบ้านบึง</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Card 1: ร้านค้า / แผงในตลาด -->
+        <div class="bg-white p-10 rounded-3xl border border-orange-100 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-orange-100 text-brand-orange flex items-center justify-center mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-brand-charcoal mb-3">ร้านค้า / แผงในตลาด</h3>
+            <p class="text-lg text-brand-muted leading-relaxed mb-8">
+              สมัครฟรี เปิด-ปิดร้านเองได้ เพิ่มยอดขายให้แผงของคุณโดยไม่ต้องเสียเวลาเฝ้าหน้าร้านเอง มีทีมงานช่วยดูแลและนำออเดอร์ส่งตรงถึงแผง
+            </p>
+          </div>
+          <a href="#merchant" class="w-full min-h-[52px] py-3.5 px-6 rounded-xl bg-brand-orange hover:bg-brand-orange-hover text-white font-heading font-semibold text-lg flex items-center justify-center transition-all shadow-sm">
+            สมัครร้านค้า
+          </a>
+        </div>
+
+        <!-- Card 2: ไรเดอร์ -->
+        <div class="bg-white p-10 rounded-3xl border border-orange-100 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-orange-100 text-brand-orange flex items-center justify-center mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-brand-charcoal mb-3">ไรเดอร์</h3>
+            <p class="text-lg text-brand-muted leading-relaxed mb-8">
+              เลือกเวลาทำงานเอง จ่ายเงินทุกเย็น ขับส่งของสดในพื้นที่บ้านบึง ใกล้บ้าน อบอุ่นเป็นกันเอง ไม่ต้องขับไปไกลนอกพื้นที่
+            </p>
+          </div>
+          <a href="#rider" class="w-full min-h-[52px] py-3.5 px-6 rounded-xl bg-brand-orange hover:bg-brand-orange-hover text-white font-heading font-semibold text-lg flex items-center justify-center transition-all shadow-sm">
+            สมัครไรเดอร์
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: ABOUT TEASER -->
+    <section id="about" class="max-w-7xl mx-auto px-8 py-10">
+      <div class="bg-white rounded-3xl p-10 lg:p-14 border border-orange-100 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden border border-orange-100 shadow-md">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFN4HuHjK0UVMG6hgYEBo0CVzeSPg5bKX4jlSoobD6YIsIePQ1kxwkUqgqOq7z1Zitg2m8SUWjtmXfQwNOulyToi4_xA5No01mML9-TfSrkXeIUVdZpyzRlLhILSpL9Raudj_HS2HyPPR-H0hAFhvs6UFfkndQ3A0pTr5oNurL1DyvwwvzW0N7OpCTEbUTA1ncVOyomDK79jI58hyGRtTFx1O_GpPiFynmAps7Cp0b6cmeqIsaS6db" alt="แม่ค้าและของสดในตลาดวิศิษฐ์ชัย บ้านบึง" class="w-full h-80 object-cover object-center">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-charcoal">เรื่องราวของ Hub2U</h2>
+          <p class="text-xl text-brand-charcoal leading-relaxed">
+            Hub2U ก่อตั้งขึ้นด้วยความตั้งใจที่จะเชื่อมโยงพ่อค้าแม่ค้าในตลาดวิศิษฐ์ชัย บ้านบึง ให้ส่งตรงผักผลไม้ เนื้อสัตว์ และของสดคุณภาพดีถึงครัวเรือนในชุมชน เพื่อให้คนบ้านบึงได้ทานของสดใหม่ทุกวันโดยไม่ต้องเดินทางฝ่าแดดหรือกังวลเรื่องที่จอดรถ
+          </p>
+          <p class="text-lg text-brand-muted leading-relaxed">
+            เราดูแลทุกถุงด้วยความเอาใจใส่เหมือนซื้อทานเองที่บ้าน พร้อมสร้างอาชีพและรายได้หมุนเวียนให้คนในอำเภอบ้านบึงเติบโตอย่างเข้มแข็งไปด้วยกัน
+          </p>
+          <div class="pt-2">
+            <a href="#about-full" class="inline-flex min-h-[52px] px-8 py-3.5 rounded-xl border-2 border-brand-charcoal text-brand-charcoal hover:bg-stone-50 font-heading font-semibold text-xl items-center justify-center transition-all">
+              เกี่ยวกับเรา
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT STRIP -->
+    <section id="contact" class="max-w-7xl mx-auto px-8 py-14">
+      <div class="bg-white rounded-3xl p-10 lg:p-14 border border-orange-100 shadow-sm">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-3">คุยกับเราทางไลน์</h2>
+          <p class="text-xl text-brand-muted">
+            สอบถามรายการของสด แจ้งความประสงค์ หรือให้แอดมินช่วยแนะนำได้ทางไลน์
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center max-w-4xl mx-auto">
+          
+          <!-- Empty white square labeled "QR LINE" -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center">
+            <div class="w-56 h-56 bg-white border-2 border-dashed border-brand-charcoal/40 rounded-2xl flex flex-col items-center justify-center p-6 text-center shadow-inner">
+              <span class="text-2xl font-heading font-bold text-brand-charcoal">QR LINE</span>
+              <span class="text-sm text-brand-muted mt-2">[สแกนเพื่อแอดไลน์]</span>
+            </div>
+          </div>
+
+          <!-- Actions & Placeholders -->
+          <div class="lg:col-span-7 space-y-6">
+            <a href="#line" class="w-full min-h-[54px] py-4 px-8 rounded-xl bg-brand-charcoal hover:bg-black text-white text-xl font-heading font-semibold flex items-center justify-center gap-3 transition-all shadow-md">
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              คุยกับเราทางไลน์
+            </a>
+
+            <div class="bg-orange-50/60 rounded-2xl p-6 border border-orange-100 space-y-3">
+              <div class="flex items-center gap-3 text-lg text-brand-charcoal">
+                <svg class="w-6 h-6 text-brand-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <span class="font-medium">เบอร์โทร:</span>
+                <span class="text-brand-muted">[ใส่เบอร์โทร]</span>
+              </div>
+              <div class="flex items-center gap-3 text-lg text-brand-charcoal">
+                <svg class="w-6 h-6 text-brand-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span class="font-medium">เวลาทำการ:</span>
+                <span class="text-brand-muted">[ใส่เวลาทำการ]</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- DESKTOP FOOTER -->
+  <footer class="bg-stone-900 text-stone-200 pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+        <!-- Col 1: About text -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-dashed border-orange-400 bg-stone-800 flex items-center justify-center text-xs text-orange-400 font-heading">
+              Logo
+            </div>
+            <span class="text-2xl font-bold font-heading text-white">Hub2U</span>
+          </div>
+          <p class="text-base text-stone-300 leading-relaxed max-w-sm">
+            บริการสั่งของสดจากตลาดวิศิษฐ์ชัย บ้านบึง ชลบุรี รวมของจากตลาดส่งถึงหน้าบ้านในถุงเดียว ค่าส่งรอบเดียว
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="md:col-span-4">
+          <p class="text-sm uppercase tracking-wider text-orange-400 font-semibold mb-4 font-heading">เมนูหลัก</p>
+          <div class="grid grid-cols-2 gap-y-2.5 gap-x-4 text-base text-stone-300">
+            <a href="#home" class="hover:text-white transition-colors">หน้าแรก</a>
+            <a href="#how" class="hover:text-white transition-colors">วิธีสั่งซื้อ</a>
+            <a href="#delivery" class="hover:text-white transition-colors">พื้นที่จัดส่ง</a>
+            <a href="#merchant" class="hover:text-white transition-colors">สมัครร้านค้า</a>
+            <a href="#rider" class="hover:text-white transition-colors">สมัครไรเดอร์</a>
+            <a href="#about" class="hover:text-white transition-colors">เกี่ยวกับเรา</a>
+            <a href="#contact" class="hover:text-white transition-colors">ติดต่อเรา</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Contact Placeholders -->
+        <div class="md:col-span-3 space-y-2.5 text-base text-stone-300">
+          <p class="text-sm uppercase tracking-wider text-orange-400 font-semibold mb-4 font-heading">ข้อมูลติดต่อ</p>
+          <p><span class="text-stone-400">เบอร์โทรศัพท์:</span> [ใส่เบอร์โทร]</p>
+          <p><span class="text-stone-400">เวลาทำการ:</span> [ใส่เวลาทำการ]</p>
+          <p><span class="text-stone-400">ที่ตั้ง:</span> ตลาดวิศิษฐ์ชัย อ.บ้านบึง จ.ชลบุรี</p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom with PWA Note -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone-400">
+        <p>© 2025 Hub2U. ตลาดวิศิษฐ์ชัย บ้านบึง ชลบุรี</p>
+        
+        <!-- PWA Note -->
+        <div class="bg-stone-800 px-5 py-2.5 rounded-full border border-stone-700 text-sm text-orange-300">
+          เปิดผ่านมือถือได้เลย ไม่ต้องโหลดจากสโตร์ กดเพิ่มลงหน้าจอหลักได้
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
