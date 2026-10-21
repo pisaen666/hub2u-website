@@ -123,7 +123,10 @@ img{max-width:100%;display:block}
 .site-footer h3{color:#fff;font-size:18px}
 .site-footer .ph{background:#44403C;color:#FED7AA;border-color:#FED7AA}
 .footer-grid{display:grid;gap:28px}
-.footer-links{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.footer-links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 16px}
+.footer-links li{flex:1 1 0;min-width:0}
+.footer-links.cols-3 li{flex-basis:28%}
+.footer-links.cols-4 li{flex-basis:20%}
 .footer-links a{display:inline-flex;min-height:40px;align-items:center}
 .copyright{border-top:1px solid #44403C;margin-top:28px;padding-top:16px;font-size:15px;color:#D6D3D1}
 
