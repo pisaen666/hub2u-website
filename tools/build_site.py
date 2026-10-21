@@ -108,6 +108,7 @@ def footer():
 <p class="small">เปิดผ่านมือถือได้เลย ไม่ต้องโหลดจากสโตร์ กด "เพิ่มลงหน้าจอหลัก" ไว้ใช้เหมือนแอปได้</p></div>
 <div><h3>เมนู</h3><ul class="footer-links cols-3">
 <li><a href="index.html">หน้าแรก</a></li><li><a href="how-to-order.html">วิธีสั่งซื้อ</a></li><li><a href="delivery-area.html">พื้นที่จัดส่ง</a></li>
+<li class="break" aria-hidden="true"></li>
 <li><a href="shop-signup.html">สมัครร้านค้า</a></li><li><a href="rider-signup.html">สมัครไรเดอร์</a></li><li><a href="about.html">เกี่ยวกับเรา</a></li></ul></div>
 <div class="footer-contact"><ul class="footer-links stack">
 <li><a href="contact.html">ติดต่อเรา</a></li><li>โทร: {PH['phone']}</li><li>ไลน์: {PH['lineId']}</li><li>เวลาทำการ: {PH['hours']}</li></ul></div>
