@@ -15,7 +15,7 @@ window.HUB2U = {
   lineId: "080-568-7733",           // เช่น @hub2u
   hours: "04.30-15.00 น.",            // เวลาทำการ
   hubLocation: "",      // ตำแหน่งจุดรวมของในตลาด
-  lineQrImage: "",      // ที่อยู่ไฟล์รูป QR ไลน์ เช่น assets/img/line-qr.png
+  lineQrImage: "assets/img/line-qr.png",      // ที่อยู่ไฟล์รูป QR ไลน์ เช่น assets/img/line-qr.png
 
   // การสั่งซื้อ
   deliveryFee: "",
